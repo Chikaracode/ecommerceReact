@@ -1,15 +1,20 @@
 import './App.css';
-import Navbar from './Navbar';
-import Home from './Home'
-import Footter from './Footter';
+import ItemList from './components/IntemList/ItemList';
+import Navbar from './components/Navbar/Navbar';
+
 
 
 function App() {
+
+  let saludo = 'Hola!'
+  let bienve = 'Bienvenidos a Chikuma Import!'
+
   return (
     <div className="App">
       <Navbar />
-      <Home />
-      <Footter />
+      <ItemList saludo={saludo} bienve={bienve}/> 
+      
+
     </div>
   );
 }
